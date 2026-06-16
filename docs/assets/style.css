@@ -173,6 +173,38 @@ p{margin:0; max-width:66ch}
   pointer-events:none;
   z-index:-1;
 }
+.hero-top{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:36px;
+  align-items:center;
+}
+.hero-photo{
+  flex-shrink:0;
+}
+.hero-photo img{
+  display:block;
+  object-fit:cover;
+  object-position:center 18%;
+  border:1px solid var(--border);
+  box-shadow:0 10px 28px -18px rgba(0,0,0,.55);
+}
+
+/* Home: clean circle */
+.hero-photo-home img{
+  width:192px;
+  height:192px;
+  border-radius:50%;
+}
+
+/* About: clean rounded portrait (matches site media) */
+.hero-photo-about img{
+  width:200px;
+  height:250px;
+  border-radius:12px;
+  background:var(--bg-soft);
+}
+
 .hero-main{display:flex; flex-direction:column; gap:18px}
 .hero p{color:#cfcfd4}
 .role-line{color:var(--muted); font-size:14px; margin-top:-6px}
@@ -474,6 +506,10 @@ li{margin:7px 0}
 @media (max-width: 680px){
   .nav-inner{padding:13px 18px}
   .container{padding:40px 16px 72px; gap:20px}
+  .hero-top{grid-template-columns:1fr; justify-items:center; text-align:center; gap:28px}
+  .hero-top .btn-row{justify-content:center}
+  .hero-photo-home img{width:min(192px, 56vw); height:min(192px, 56vw)}
+  .hero-photo-about img{width:min(200px, 68vw); height:auto; aspect-ratio:200/250}
   .container > section:not(.hero):not(.flat){padding:22px 20px}
   .cards{grid-template-columns:1fr}
   .media-grid{grid-template-columns:1fr}
