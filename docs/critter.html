@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" data-page="critter">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C.R.I.T.T.E.R. · Julian de Braak</title>
+    <meta name="description" content="C.R.I.T.T.E.R. case study. Lead programmer on a pixel art platformer about discovering language." />
+    <meta property="og:title" content="C.R.I.T.T.E.R. case study" />
+    <meta property="og:description" content="Lead programmer on a GameMaker pixel art platformer about discovering language. Systems, tooling, and a playable demo." />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/site.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="./index.html"><span class="brand-mark">J</span>Julian de Braak</a>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./cook-a-montage.html">Cook A Montage</a>
+          <a class="active" href="./critter.html">C.R.I.T.T.E.R.</a>
+          <a href="./about.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-main">
+          <span class="eyebrow">Case study</span>
+          <h1>C.R.I.T.T.E.R.</h1>
+          <div class="role-line">Lead Programmer · GameMaker · Team of 5</div>
+          <p class="lede">Discover language from the critters that roam the forest as you run, jump, and swing through it.</p>
+          <p>They speak in words you do not understand at first. As you collect language stones, meaning starts to click, and you can complete tasks for the critters you meet along the way.</p>
+        </div>
+        <aside class="facts" aria-label="At a glance">
+          <div class="fact"><span class="fk">Format</span><span class="fv">Pixel Art Platformer</span></div>
+          <div class="fact"><span class="fk">Made with</span><span class="fv">GameMaker</span></div>
+          <div class="fact"><span class="fk">My role</span><span class="fv">Lead Programmer</span></div>
+          <div class="fact"><span class="fk">Team</span><span class="fv">5 People</span></div>
+          <div class="fact"><span class="fk">Result</span><span class="fv">Playable Demo: One Quest</span></div>
+        </aside>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Media</span><h2>Screens &amp; Gameplay</h2></div>
+        <div class="media-stage">
+          <div>
+            <figure class="media-main">
+              <video autoplay muted loop playsinline preload="auto" data-ph="critter-clip.mp4">
+                <source src="./assets/media/critter-clip.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <div class="media-cap">Gameplay Clip: Traversal and Learning Critter Words</div>
+          </div>
+          <div class="carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="slide"><img src="./assets/media/critter-shot-1.png" alt="C.R.I.T.T.E.R. screenshot 1" data-ph="critter-shot-1.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-2.png" alt="C.R.I.T.T.E.R. screenshot 2" data-ph="critter-shot-2.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-3.png" alt="C.R.I.T.T.E.R. screenshot 3" data-ph="critter-shot-3.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-4.png" alt="C.R.I.T.T.E.R. screenshot 4" data-ph="critter-shot-4.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-5.png" alt="C.R.I.T.T.E.R. screenshot 5" data-ph="critter-shot-5.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-6.png" alt="C.R.I.T.T.E.R. screenshot 6" data-ph="critter-shot-6.png" /></div>
+                <div class="slide"><img src="./assets/media/critter-shot-7.png" alt="C.R.I.T.T.E.R. screenshot 7" data-ph="critter-shot-7.png" /></div>
+              </div>
+              <button class="car-btn prev" aria-label="Previous">&#8249;</button>
+              <button class="car-btn next" aria-label="Next">&#8250;</button>
+            </div>
+            <div class="carousel-dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">My Contribution</span><h2>What I Did</h2></div>
+        <div class="blocks">
+          <div class="block">
+            <h3>Programming &amp; World</h3>
+            <ul>
+              <li>Lead programmer on a shared codebase, coded most gameplay and systems</li>
+              <li>Built the forest levels from team sprites; teammates handled pixel art and dialogue writing</li>
+              <li>Composed music, kept builds runnable, and ran playtests through iteration</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>LDtk Pipeline</h3>
+            <ul>
+              <li>Designed level layout in LDtk, then wrote a converter tool to generate GameMaker rooms from the export</li>
+              <li>Mapped entities (player, checkpoints, collectibles, NPCs) into the right objects in-engine</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>Language &amp; Dialogue</h3>
+            <ul>
+              <li>Critters speak in ALL-CAPS vocabulary words; unknown words stay highlighted and learned words show their meaning</li>
+              <li>Language stones add words to global.learned_words, and the dialogue translator re-renders lines as you progress</li>
+              <li>Quest dialogue and NPC tasks gate on what you understand, so you need certain words before a critter's request makes sense</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>Mechanics</h3>
+            <ul>
+              <li>State machine for player modes: free, dash, wall slide, grapple, reading</li>
+              <li>Dash, glide, and grapple unlock through forest quests; movement uses coyote time, jump buffer, and variable jump height</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Core Loop</span><h2>How It Plays</h2></div>
+        <ol class="steps">
+          <li>Explore the forest: run, jump, wall slide, and swing on your tail</li>
+          <li>Find language stones and learn critter words one by one</li>
+          <li>Return to NPCs as the dialogue shifts from unreadable to translated</li>
+          <li>Complete tasks for forest critters; new abilities let you reach areas you could not before</li>
+          <li>Push deeper into the forest, toward the demo's end</li>
+        </ol>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Stack</span><h2>Tools</h2></div>
+        <div class="chips">
+          <span class="chip accent">GameMaker</span>
+          <span class="chip accent">LDtk</span>
+          <span class="chip accent">Git</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Relevance</span><h2>What This Demonstrates</h2></div>
+        <div class="notes">
+          <div class="note"><strong>Owned Gameplay Code.</strong> State machines, movement feel, and quest gating I wrote and tuned on a shared codebase.</div>
+          <div class="note"><strong>Custom Tooling.</strong> An LDtk-to-GameMaker pipeline so level design didn't have to be rebuilt by hand in-engine.</div>
+          <div class="note"><strong>Build Responsibility.</strong> Kept the team runnable through iteration, plus music and playtests when the demo needed it.</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Reflection</span><h2>What I'd Improve</h2></div>
+        <div class="notes">
+          <div class="note">Clearer accountability on a five-person team. Roles blurred early and I picked up work outside programming to keep the demo moving.</div>
+          <div class="note">More playtesting on language and ability pacing. The gap between understanding enough to follow a quest and actually reaching the new areas needed tighter tuning.</div>
+          <div class="note">A writer-friendly pipeline for critter vocabulary. The word dictionary lived in code; a shared table would have made it easier for teammates to add and review dialogue.</div>
+        </div>
+      </section>
+
+      <section class="flat">
+        <div class="pager">
+          <a class="backlink" href="./index.html"><span class="arrow">←</span> Back to Home</a>
+          <a class="next" href="./cook-a-montage.html">Next project: Cook A Montage <span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="meta">© Julian de Braak</span>
+        <span class="status">CMGT Student · Open to Internships</span>
+        <span class="meta"><a href="mailto:j.de.braak@outlook.com">j.de.braak@outlook.com</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

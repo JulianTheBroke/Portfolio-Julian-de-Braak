@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" data-page="cam">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cook A Montage (CAM) · Julian de Braak</title>
+    <meta name="description" content="Cook A Montage (CAM) case study. Lead programmer on a Unity cooking-show camera direction game." />
+    <meta property="og:title" content="Cook A Montage (CAM) case study" />
+    <meta property="og:description" content="Lead programmer on a Unity cooking-show camera-direction sim. Systems, integration, and shipping a full recipe loop." />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/site.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="./index.html"><span class="brand-mark">J</span>Julian de Braak</a>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a class="active" href="./cook-a-montage.html">Cook A Montage</a>
+          <a href="./critter.html">C.R.I.T.T.E.R.</a>
+          <a href="./about.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-main">
+          <span class="eyebrow">Case Study · Lead Project</span>
+          <h1>Cook A Montage (CAM)</h1>
+          <div class="role-line">Lead Programmer · Unity · Team of 4</div>
+          <p class="lede">A cooking-show game where you sit behind the screens in the camera booth, not at the stove.</p>
+          <p>Sandra cooks on set. You switch cameras, follow the action, and keep the right shots recording. Producer notes tell you what matters. Quick-time events and other scoring rules decide how well you covered each step. When the recipe is done, you get a score and watch your montage replay to see what you captured.</p>
+          <p class="meta">CAM = Cook A Montage.</p>
+        </div>
+        <aside class="facts" aria-label="At a glance">
+          <div class="fact"><span class="fk">Format</span><span class="fv">Camera Direction Sim</span></div>
+          <div class="fact"><span class="fk">Made with</span><span class="fv">Unity</span></div>
+          <div class="fact"><span class="fk">My role</span><span class="fv">Lead Programmer</span></div>
+          <div class="fact"><span class="fk">Team</span><span class="fv">4 People</span></div>
+          <div class="fact"><span class="fk">Result</span><span class="fv">Playable Demo: One Recipe</span></div>
+        </aside>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Media</span><h2>Screens &amp; Gameplay</h2></div>
+        <div class="media-stage">
+          <div>
+            <figure class="media-main">
+              <video autoplay muted loop playsinline preload="auto" data-ph="cam-clip.mp4">
+                <source src="./assets/media/cam-clip.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <div class="media-cap">Gameplay Clip: Camera Switching During a Recipe</div>
+          </div>
+          <div class="carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="slide"><img src="./assets/media/cam-shot-1.png" alt="Cook A Montage screenshot 1" data-ph="cam-shot-1.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-2.png" alt="Cook A Montage screenshot 2" data-ph="cam-shot-2.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-3.png" alt="Cook A Montage screenshot 3" data-ph="cam-shot-3.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-4.png" alt="Cook A Montage screenshot 4" data-ph="cam-shot-4.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-5.png" alt="Cook A Montage screenshot 5" data-ph="cam-shot-5.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-6.png" alt="Cook A Montage screenshot 6" data-ph="cam-shot-6.png" /></div>
+                <div class="slide"><img src="./assets/media/cam-shot-7.png" alt="Cook A Montage screenshot 7" data-ph="cam-shot-7.png" /></div>
+              </div>
+              <button class="car-btn prev" aria-label="Previous">&#8249;</button>
+              <button class="car-btn next" aria-label="Next">&#8250;</button>
+            </div>
+            <div class="carousel-dots" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">My Contribution</span><h2>What I Did</h2></div>
+        <div class="blocks">
+          <div class="block">
+            <h3>Programming &amp; Integration</h3>
+            <ul>
+              <li>Lead programmer on a shared codebase, wired menus, kitchen, camera booth, and recipe flow together</li>
+              <li>Fixed builds and scene issues so we always had something runnable to test and present</li>
+              <li>Managed version control on the team repo</li>
+              <li>Ran playtests and fixed blockers before demo</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>Shipping Under Pressure</h3>
+            <ul>
+              <li>Built an early camera-switching prototype in a few days so the team had something concrete to react to. Not a full game, but proof the director fantasy could work</li>
+              <li>We had scoped the full game loop (direct, record, QTE, score, replay) but not every piece was ready at once; art, UI, and systems landed on different schedules</li>
+              <li>Close to deadline I pulled what we had into one build and wired the gaps so we could demo that loop as close as possible to what we designed: one recipe, start to finish, with a score and replay at the end</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>Outside Code (Limited)</h3>
+            <ul>
+              <li>Made a few early Blender placeholders to unblock the team; most were replaced and did not ship</li>
+              <li>One asset I textured in Substance Painter did make it into the final game</li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>How I Work</h3>
+            <ul>
+              <li>Define the problem: what the feature or system needs to do in the game</li>
+              <li>Research: look at references and how similar problems are already solved</li>
+              <li>Build a basic version myself, getting something running even if it's rough</li>
+              <li>Debug and iterate: fix what breaks, and tighten it until it holds together in a build</li>
+            </ul>
+            <div style="height:12px"></div>
+            <p>I also use AI as a tool in that same loop for faster lookup, drafting, or debugging, but never for creative decisions. The design and what ships stay mine.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Core Loop</span><h2>How a Recipe Plays</h2></div>
+        <ol class="steps">
+          <li>Read the producer notes for what to film next</li>
+          <li>Switch cameras and follow Sandra; keep key moments recording</li>
+          <li>Hit QTEs and meet scoring criteria as she cooks</li>
+          <li>Get your score breakdown for the recipe</li>
+          <li>Watch your montage replay</li>
+        </ol>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Stack</span><h2>Tools</h2></div>
+        <div class="chips">
+          <span class="chip accent">Unity</span>
+          <span class="chip accent">C#</span>
+          <span class="chip accent">URP</span>
+          <span class="chip">Blender</span>
+          <span class="chip">Substance Painter</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Relevance</span><h2>What This Demonstrates</h2></div>
+        <div class="notes">
+          <div class="note"><strong>Client-Style Production.</strong> Integration across scenes, GitHub, playtests, and a hard deadline. Closer to how a studio ships a vertical slice than a solo art piece.</div>
+          <div class="note"><strong>Lead Programmer Ownership.</strong> Wired menus, kitchen, camera booth, and recipe flow into one runnable loop the team could demo.</div>
+          <div class="note"><strong>Honest Process.</strong> Documented what I'd improve, including scope calls and knowing when to cut rather than oversell.</div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head"><span class="eyebrow">Reflection</span><h2>What I'd Improve</h2></div>
+        <div class="notes">
+          <div class="note">Lock in the core loop earlier, before adding recipe scope. We knew the full loop early but kept building outward before the director flow felt solid end to end.</div>
+          <div class="note">Own critical systems by hand from start to finish. I used AI to move faster, but I want a deeper understanding of every system that ships in a build I present.</div>
+          <div class="note">A clearer split between programming lead and integration. On a four-person team I ended up doing both, and earlier boundaries would have reduced last-minute firefighting.</div>
+        </div>
+      </section>
+
+      <section class="flat">
+        <div class="pager">
+          <a class="backlink" href="./index.html"><span class="arrow">←</span> Back to Home</a>
+          <a class="next" href="./critter.html">Next project: C.R.I.T.T.E.R. <span class="arrow">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="meta">© Julian de Braak</span>
+        <span class="status">CMGT Student · Open to Internships</span>
+        <span class="meta"><a href="mailto:j.de.braak@outlook.com">j.de.braak@outlook.com</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
